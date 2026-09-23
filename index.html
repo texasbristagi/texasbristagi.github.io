@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#4f46e5" />
+  <meta name="description" content="Portofolio pribadi - Web Developer & Designer" />
+  <meta name="author" content="Texas Bristagi" />
+
+  <!-- Paksa scroll ke atas sebelum halaman dirender -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  </script>
+
+  <title>Portofolio | Texas Bristagi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+  <!-- ============================================
+       STYLESHEET & ICONS
+       ============================================ -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portofolio<span>.</span></div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang Saya</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Ubah tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Overlay untuk menu mobile -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- ============================================
+       BERANDA / HERO
+       ============================================ -->
+  <section id="beranda" class="hero">
+    <div class="hero-content">
+      <p class="greet">Halo, selamat datang 👋</p>
+      <h1>Saya <span>Texas Bristagi</span></h1>
+      <h2>Web Developer & Designer</h2>
+      <p class="desc">
+        Saya seorang pengembang web yang suka membuat website modern, responsif, dan ramah pengguna.
+      </p>
+      <div class="hero-btns">
+        <a href="#portofolio" class="btn primary">Lihat Portofolio</a>
+        <a href="#kontak" class="btn outline">Hubungi Saya</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/350" alt="Foto Profil" />
+    </div>
+  </section>
+
+  <!-- ============================================
+       TENTANG SAYA
+       ============================================ -->
+  <section id="tentang" class="section">
+    <h2 class="section-title">Tentang Saya</h2>
+
+    <div class="about">
+      <div class="about-text">
+        <p>
+          Halo! Saya <strong>Texas Bristagi</strong>, seorang web developer yang berdomisili di Indonesia.
+          Saya memiliki pengalaman dalam membangun website menggunakan HTML, CSS, JavaScript,
+          dan framework modern lainnya.
+        </p>
+        <p>
+          Saya percaya bahwa website yang baik bukan hanya indah dipandang, tetapi juga
+          mudah digunakan dan cepat diakses.
+        </p>
+
+        <ul class="skills">
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>React / Vue</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PORTOFOLIO
+       ============================================ -->
+  <section id="portofolio" class="section alt-bg">
+    <h2 class="section-title">Portofolio</h2>
+
+    <div class="grid">
+      <!-- Project 1 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x220" alt="Website Company Profile" />
+        <div class="card-body">
+          <h3>Website Company Profile</h3>
+          <p>Website profil perusahaan dengan desain modern dan responsif.</p>
+          <a href="#" class="card-link">Lihat Detail →</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x220" alt="Aplikasi Todo List" />
+        <div class="card-body">
+          <h3>Aplikasi Todo List</h3>
+          <p>Aplikasi pencatat tugas harian dengan fitur CRUD menggunakan JavaScript.</p>
+          <a href="#" class="card-link">Lihat Detail →</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x220" alt="Landing Page Produk" />
+        <div class="card-body">
+          <h3>Landing Page Produk</h3>
+          <p>Landing page untuk produk digital dengan animasi halus.</p>
+          <a href="#" class="card-link">Lihat Detail →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PENGALAMAN
+       ============================================ -->
+  <section id="pengalaman" class="section">
+    <h2 class="section-title">Pengalaman</h2>
+
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek)</h3>
+          <span class="date">Juli 2022 - Agustus 2022</span>
+          <p>Telah melaksanakan program magang/praktik kerja pada Sekretariat Ditektorat Jenderal Guru dan Tenaga Kependidikan, 
+            Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>soon</h3>
+          <span class="date">soon</span>
+          <p>soon.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>soon</h3>
+          <span class="date">soon</span>
+          <p>soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       KONTAK
+       ============================================ -->
+  <section id="kontak" class="section alt-bg">
+    <h2 class="section-title">Kontak</h2>
+
+    <div class="contact-wrapper">
+      <!-- Info Sosial Media -->
+      <div class="contact-info">
+        <h3 class="contact-subtitle">Mari Terhubung</h3>
+        <p class="contact-desc">
+          Silakan hubungi saya melalui sosial media berikut atau kirim pesan langsung
+          melalui form di samping.
+        </p>
+
+        <div class="socials">
+          <!-- GitHub -->
+          <a href="https://github.com/texasbristagi"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="GitHub"
+             data-tooltip="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com/texasbrstgi"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Instagram"
+             data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/texas bristagi"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="LinkedIn"
+             data-tooltip="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6281517182024"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="WhatsApp"
+             data-tooltip="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form Kirim Pesan -->
+      <form class="contact-form" onsubmit="return kirimPesan(event)">
+        <h3 class="form-title">Kirim Pesan</h3>
+        <p class="form-desc">Punya pertanyaan atau ingin bekerja sama? Isi form di bawah ini.</p>
+
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" placeholder="Masukkan nama kamu" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="nama@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" rows="4" placeholder="Tulis pesan kamu di sini..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary btn-submit">
+          <i class="fas fa-paper-plane"></i> Kirim Pesan
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <p>© <span id="year"></span> Texas Bristagi. All rights reserved.</p>
+  </footer>
+
+  <!-- ============================================
+       SCRIPT
+       ============================================ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
