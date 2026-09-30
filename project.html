@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#b8924a" />
+  <meta name="description" content="Detail Project - Texas Bristagi" />
+  <meta name="author" content="Texas Bristagi" />
+
+  <link rel="icon" href="data:," />
+
+  <script>
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  </script>
+
+  <title>Detail Project | Texas Bristagi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="navbar-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TB</span>
+        <span class="brand-text">Texas Bristagi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#beranda" class="nav-link">Beranda</a></li>
+        <li><a href="index.html#tentang" class="nav-link">Tentang</a></li>
+        <li><a href="index.html#portofolio" class="nav-link">Portofolio</a></li>
+        <li><a href="index.html#pengalaman" class="nav-link">Pengalaman</a></li>
+        <li><a href="index.html#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Ubah tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Buka menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <main class="project-page">
+    <div class="container">
+      <a href="index.html#portofolio" class="back-link">
+        <i class="fas fa-arrow-left"></i>
+        <span>Kembali ke Portofolio</span>
+      </a>
+
+      <div id="projectContent">
+        <div class="loading-state">
+          <div class="loader-ring"></div>
+          <p>Memuat project...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="brand-mark">TB</span><span>Texas Bristagi</span></div>
+        <p class="footer-copy">© <span id="year"></span> Texas Bristagi — Dibuat dengan <i class="fas fa-heart"></i> dan ketelitian.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

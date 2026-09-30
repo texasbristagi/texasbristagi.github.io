@@ -3,281 +3,310 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <meta name="theme-color" content="#4f46e5" />
-  <meta name="description" content="Portofolio pribadi - Web Developer & Designer" />
+  <meta name="theme-color" content="#b8924a" />
+  <meta name="description" content="Portofolio Texas Bristagi - Web Developer & Designer" />
   <meta name="author" content="Texas Bristagi" />
 
-  <!-- Paksa scroll ke atas sebelum halaman dirender -->
+  <link rel="icon" href="data:," />
+
   <script>
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-    window.scrollTo(0, 0);
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   </script>
 
-  <title>Portofolio | Texas Bristagi</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
+  <title>Texas Bristagi — Web Developer & Designer</title>
 
-  <!-- ============================================
-       STYLESHEET & ICONS
-       ============================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
 
-  <!-- ============================================
-       NAVBAR
-       ============================================ -->
-  <header>
+  <header class="navbar-wrap">
     <nav class="navbar">
-      <div class="logo">Portofolio<span>.</span></div>
+      <a href="#beranda" class="brand">
+        <span class="brand-mark">TB</span>
+        <span class="brand-text">Texas Bristagi</span>
+      </a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#tentang">Tentang Saya</a></li>
-        <li><a href="#portofolio">Portofolio</a></li>
-        <li><a href="#pengalaman">Pengalaman</a></li>
-        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#beranda" class="nav-link">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang</a></li>
+        <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+        <li><a href="#pengalaman" class="nav-link">Pengalaman</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button id="themeToggle" class="theme-toggle" aria-label="Ubah tema">
+        <button id="themeToggle" class="icon-btn" aria-label="Ubah tema">
           <i class="fas fa-moon"></i>
         </button>
-        <div class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Buka menu">
           <i class="fas fa-bars"></i>
-        </div>
+        </button>
       </div>
     </nav>
   </header>
 
-  <!-- Overlay untuk menu mobile -->
   <div class="menu-overlay" id="menuOverlay"></div>
 
-  <!-- ============================================
-       BERANDA / HERO
-       ============================================ -->
-  <section id="beranda" class="hero">
-    <div class="hero-content">
-      <p class="greet">Halo, selamat datang 👋</p>
-      <h1>Saya <span>Texas Bristagi</span></h1>
-      <h2>Web Developer & Designer</h2>
-      <p class="desc">
-        Saya seorang pengembang web yang suka membuat website modern, responsif, dan ramah pengguna.
+<!-- Background full width -->
+<section id="beranda">
+  <!-- Konten terbatas max-width -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="status-dot"></span>
+        <span>Tersedia untuk project baru</span>
+      </div>
+
+      <h1 class="hero-title">
+        Halo, saya <span class="gradient-text">Texas Bristagi</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Web Developer & Designer — membangun website yang cepat, rapi,
+        dan menyenangkan untuk digunakan.
       </p>
-      <div class="hero-btns">
-        <a href="#portofolio" class="btn primary">Lihat Portofolio</a>
-        <a href="#kontak" class="btn outline">Hubungi Saya</a>
+
+      <div class="hero-cta">
+        <a href="#portofolio" class="btn btn-primary">
+          Lihat Portofolio
+        </a>
+        <a href="#kontak" class="btn btn-ghost">
+          Hubungi Saya
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-value">3+</span><span class="stat-label">Project</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-value">2+</span><span class="stat-label">Tahun Belajar</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-value">100%</span><span class="stat-label">Passion</span></div>
       </div>
     </div>
 
-    <div class="hero-img">
-      <img src="https://via.placeholder.com/350" alt="Foto Profil" />
+    <div class="hero-visual">
+      <div class="visual-card">
+        <div class="visual-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="visual-filename">portfolio.js</span>
+        </div>
+        <pre class="visual-code"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Texas Bristagi"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Web Developer"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>],
+  <span class="c-prop">passion</span>: <span class="c-str">"Crafting UI"</span>
+};</code></pre>
+        <div class="visual-footer">
+          <span class="pulse"></span> Ready to build
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============================================
-       TENTANG SAYA
-       ============================================ -->
   <section id="tentang" class="section">
-    <h2 class="section-title">Tentang Saya</h2>
-
-    <div class="about">
-      <div class="about-text">
-        <p>
-          Halo! Saya <strong>Texas Bristagi</strong>, seorang web developer yang berdomisili di Indonesia.
-          Saya memiliki pengalaman dalam membangun website menggunakan HTML, CSS, JavaScript,
-          dan framework modern lainnya.
-        </p>
-        <p>
-          Saya percaya bahwa website yang baik bukan hanya indah dipandang, tetapi juga
-          mudah digunakan dan cepat diakses.
-        </p>
-
-        <ul class="skills">
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-          <li>React / Vue</li>
-          <li>UI/UX Design</li>
-        </ul>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Tentang</span>
+        <h2 class="section-title">Di Balik <span class="gradient-text">Layar</span></h2>
+        <p class="section-sub">Sekilas tentang saya dan apa yang saya kerjakan.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- ============================================
-       PORTOFOLIO
-       ============================================ -->
-  <section id="portofolio" class="section alt-bg">
-    <h2 class="section-title">Portofolio</h2>
-
-    <div class="grid">
-      <!-- Project 1 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/400x220" alt="Website Company Profile" />
-        <div class="card-body">
-          <h3>Website Company Profile</h3>
-          <p>Website profil perusahaan dengan desain modern dan responsif.</p>
-          <a href="#" class="card-link">Lihat Detail →</a>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-user"></i></div>
+          <h3>Siapa Saya</h3>
+          <p>Halo! Saya <strong>Texas Bristagi</strong>, seorang web developer yang berdomisili di Indonesia. Saya suka mengubah ide menjadi website yang nyata, indah, dan fungsional.</p>
         </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/400x220" alt="Aplikasi Todo List" />
-        <div class="card-body">
-          <h3>Aplikasi Todo List</h3>
-          <p>Aplikasi pencatat tugas harian dengan fitur CRUD menggunakan JavaScript.</p>
-          <a href="#" class="card-link">Lihat Detail →</a>
+        <div class="about-card">
+          <div class="about-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Filosofi</h3>
+          <p>Website yang baik bukan hanya indah dipandang — tapi juga cepat, mudah digunakan, dan meninggalkan kesan positif untuk pengunjungnya.</p>
         </div>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="card">
-        <img src="https://via.placeholder.com/400x220" alt="Landing Page Produk" />
-        <div class="card-body">
-          <h3>Landing Page Produk</h3>
-          <p>Landing page untuk produk digital dengan animasi halus.</p>
-          <a href="#" class="card-link">Lihat Detail →</a>
+        <div class="about-card full">
+          <div class="about-icon"><i class="fas fa-tools"></i></div>
+          <h3>Yang Saya Kuasai</h3>
+          <div class="skill-tags">
+            <span class="tag"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="tag"><i class="fab fa-react"></i> React</span>
+            <span class="tag"><i class="fab fa-vuejs"></i> Vue</span>
+            <span class="tag"><i class="fas fa-palette"></i> UI/UX Design</span>
+            <span class="tag"><i class="fab fa-figma"></i> Figma</span>
+            <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-       PENGALAMAN
-       ============================================ -->
+  <section id="portofolio" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Portofolio</span>
+        <h2 class="section-title">Karya <span class="gradient-text">Pilihan</span></h2>
+        <p class="section-sub">Beberapa project yang saya banggakan.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <a href="project.html?id=company-profile" class="portfolio-card">
+          <div class="portfolio-thumb">
+            <img src="https://placehold.co/600x400/b8924a/ffffff?text=Company+Profile" alt="Company Profile" />
+            <div class="portfolio-overlay"><span class="overlay-btn"><i class="fas fa-arrow-right"></i></span></div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags"><span>Web</span><span>Responsive</span></div>
+            <h3>Website Company Profile</h3>
+            <p>Website profil perusahaan dengan desain modern dan responsif.</p>
+          </div>
+        </a>
+
+        <a href="project.html?id=todo-list" class="portfolio-card">
+          <div class="portfolio-thumb">
+            <img src="https://placehold.co/600x400/9d7a35/ffffff?text=Todo+List" alt="Todo List App" />
+            <div class="portfolio-overlay"><span class="overlay-btn"><i class="fas fa-arrow-right"></i></span></div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags"><span>App</span><span>JavaScript</span></div>
+            <h3>Aplikasi Todo List</h3>
+            <p>Aplikasi pencatat tugas harian dengan fitur CRUD & LocalStorage.</p>
+          </div>
+        </a>
+
+        <a href="project.html?id=landing-page" class="portfolio-card">
+          <div class="portfolio-thumb">
+            <img src="https://placehold.co/600x400/7a5c2e/ffffff?text=Landing+Page" alt="Landing Page" />
+            <div class="portfolio-overlay"><span class="overlay-btn"><i class="fas fa-arrow-right"></i></span></div>
+          </div>
+          <div class="portfolio-body">
+            <div class="portfolio-tags"><span>Landing</span><span>Animation</span></div>
+            <h3>Landing Page Produk</h3>
+            <p>Landing page untuk produk digital dengan animasi halus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section id="pengalaman" class="section">
-    <h2 class="section-title">Pengalaman</h2>
-
-    <div class="timeline">
-      <!-- Item 1 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek)</h3>
-          <span class="date">Juli 2022 - Agustus 2022</span>
-          <p>Telah melaksanakan program magang/praktik kerja pada Sekretariat Ditektorat Jenderal Guru dan Tenaga Kependidikan, 
-            Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi</p>
-        </div>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Pengalaman</span>
+        <h2 class="section-title">Jejak <span class="gradient-text">Perjalanan</span></h2>
+        <p class="section-sub">Pengalaman yang membentuk saya hingga saat ini.</p>
       </div>
 
-      <!-- Item 2 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>soon</h3>
-          <span class="date">soon</span>
-          <p>soon.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="far fa-calendar"></i> Juli 2022 — Agustus 2022</span>
+            <h3>Magang — Kemendikbudristek</h3>
+            <p class="timeline-company"><i class="far fa-building"></i> Sekretariat Ditjen Guru dan Tenaga Kependidikan</p>
+            <p>Melaksanakan program magang/praktik kerja pada Sekretariat Direktorat Jenderal Guru dan Tenaga Kependidikan, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Item 3 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>soon</h3>
-          <span class="date">soon</span>
-          <p>soon.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="far fa-calendar"></i> Segera</span>
+            <h3>Freelance Web Developer</h3>
+            <p class="timeline-company"><i class="far fa-building"></i> Terbuka untuk project</p>
+            <p>Sedang mempersiapkan portofolio freelance dan project-project menarik.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date"><i class="far fa-calendar"></i> Segera</span>
+            <h3>Full-stack Developer</h3>
+            <p class="timeline-company"><i class="far fa-building"></i> Target berikutnya</p>
+            <p>Terus belajar dan berkembang untuk menjadi full-stack developer.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================================
-       KONTAK
-       ============================================ -->
-  <section id="kontak" class="section alt-bg">
-    <h2 class="section-title">Kontak</h2>
-
-    <div class="contact-wrapper">
-      <!-- Info Sosial Media -->
-      <div class="contact-info">
-        <h3 class="contact-subtitle">Mari Terhubung</h3>
-        <p class="contact-desc">
-          Silakan hubungi saya melalui sosial media berikut atau kirim pesan langsung
-          melalui form di samping.
-        </p>
-
-        <div class="socials">
-          <!-- GitHub -->
-          <a href="https://github.com/texasbristagi"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="GitHub"
-             data-tooltip="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-
-          <!-- Instagram -->
-          <a href="https://instagram.com/texasbrstgi"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Instagram"
-             data-tooltip="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <!-- LinkedIn -->
-          <a href="https://linkedin.com/in/texas bristagi"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="LinkedIn"
-             data-tooltip="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-
-          <!-- WhatsApp -->
-          <a href="https://wa.me/6281517182024"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="WhatsApp"
-             data-tooltip="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        </div>
+  <section id="kontak" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Kontak</span>
+        <h2 class="section-title">Mari <span class="gradient-text">Terhubung</span></h2>
+        <p class="section-sub">Punya ide, pertanyaan, atau ingin kolaborasi? Saya siap.</p>
       </div>
 
-      <!-- Form Kirim Pesan -->
-      <form class="contact-form" onsubmit="return kirimPesan(event)">
-        <h3 class="form-title">Kirim Pesan</h3>
-        <p class="form-desc">Punya pertanyaan atau ingin bekerja sama? Isi form di bawah ini.</p>
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <h3>Ikuti Saya</h3>
+          <p class="contact-panel-desc">Temukan saya di sosial media berikut, atau kirim pesan lewat form di samping.</p>
 
-        <div class="form-group">
-          <label for="nama">Nama</label>
-          <input type="text" id="nama" placeholder="Masukkan nama kamu" required />
+          <div class="socials">
+            <a href="https://github.com/texasbristagi" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/texasbrstgi" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/texasbristagi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/6281517182024" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <div class="contact-note"><i class="fas fa-clock"></i><span>Balasan dalam 1×24 jam</span></div>
         </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="nama@email.com" required />
-        </div>
-
-        <div class="form-group">
-          <label for="pesan">Pesan</label>
-          <textarea id="pesan" rows="4" placeholder="Tulis pesan kamu di sini..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn primary btn-submit">
-          <i class="fas fa-paper-plane"></i> Kirim Pesan
-        </button>
-      </form>
+        <form class="contact-form" onsubmit="return kirimPesan(event)">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Nama kamu" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="nama@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
     </div>
   </section>
 
-  <!-- ============================================
-       FOOTER
-       ============================================ -->
-  <footer>
-    <p>© <span id="year"></span> Texas Bristagi. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><span class="brand-mark">TB</span><span>Texas Bristagi</span></div>
+        <p class="footer-copy">© <span id="year"></span> Texas Bristagi — Dibuat dengan <i class="fas fa-heart"></i> dan ketelitian.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- ============================================
-       SCRIPT
-       ============================================ -->
+  <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="projects.js"></script>
   <script src="script.js"></script>
 
 </body>
